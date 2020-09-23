@@ -2,7 +2,7 @@ from flask import Flask, request
 
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
+# app.config["DEBUG"] = True
 
 resultData = []
 
@@ -29,4 +29,4 @@ def add():
         return str('Number Received')
 
 
-app.run()
+app.run(host='0.0.0.0')
